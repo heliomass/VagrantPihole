@@ -1,0 +1,12 @@
+---
+- name: Install Python on Alpine
+  hosts: pyhole
+  become: True
+  gather_facts: False
+  tasks:
+    - name: update apk
+      raw: apk update
+    - name: upgrade apk
+      raw: apk upgrade || true
+    - name: install python
+      raw: apk add python2-dev || true
