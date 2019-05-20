@@ -1,0 +1,16 @@
+---
+- name: Install, configure and start Pi-hole
+  hosts: pihole
+  become: True
+  tasks:
+
+    - name: Install git
+      apt:
+        name: git
+        update_cache: yes
+
+    - name: Download Pi-hole
+      git:
+        repo: https://github.com/pi-hole/pi-hole.git
+        dest: /root/Pi-hole
+        depth: 1
