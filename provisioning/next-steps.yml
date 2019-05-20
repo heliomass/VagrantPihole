@@ -1,0 +1,7 @@
+---
+- name: Next steps 
+  hosts: pihole
+  tasks:
+
+    - debug:
+        msg: Pi-hole is ready for installation. Please continue with the manual installer as per the README.md file.

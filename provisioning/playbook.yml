@@ -3,3 +3,4 @@
 - import_playbook: configure-avahi.yml
 - import_playbook: upgrade-ubuntu.yml
 - import_playbook: configure-pihole.yml
+- import_playbook: next-steps.yml
