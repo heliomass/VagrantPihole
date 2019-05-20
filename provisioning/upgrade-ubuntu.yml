@@ -1,0 +1,19 @@
+---
+- name: Upgrade installed Ubuntu packages
+  hosts: pihole
+  become: True
+  tasks:
+
+    - name: Install Aptitude
+      apt:
+        name: aptitude
+        update_cache: yes
+
+    - name: apt-get update
+      apt:
+        update_cache: yes
+
+    - name: apt-get upgrade
+      apt:
+        name: "*"
+        state: latest
