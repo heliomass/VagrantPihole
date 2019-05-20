@@ -1,3 +1,4 @@
 ---
+- import_playbook: install-python.yml
 - import_playbook: configure-avahi.yml
 - import_playbook: configure-pihole.yml

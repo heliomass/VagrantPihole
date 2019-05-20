@@ -1,0 +1,8 @@
+---
+- name: Install Python
+  hosts: pihole
+  become: True
+  gather_facts: False
+  tasks:
+    - name: install python
+      raw: apt-get install python -y
