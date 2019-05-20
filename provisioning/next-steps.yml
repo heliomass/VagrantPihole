@@ -1,6 +1,7 @@
 ---
 - name: Next steps 
   hosts: pihole
+  gather_facts: False
   tasks:
 
     - debug:

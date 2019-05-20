@@ -2,6 +2,7 @@
 - name: Install, configure and start avahi
   hosts: pihole
   become: True
+  gather_facts: False
   tasks:
 
     - name: Install avahi-daemon
