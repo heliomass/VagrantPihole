@@ -13,7 +13,7 @@
         name: avahi
         update_cache: yes
 
-    - name: Install avahi-daemon
+    - name: Start avahi-daemon
       service:
         name: avahi-daemon
         state: started
