@@ -1,8 +1,11 @@
+# -*- mode: ruby -*-
+# vi: set ft=ruby :
+
 Vagrant.configure("2") do |config|
 
   config.vm.box = "ubuntu/trusty64"
-  config.vm.define "pyhole"
-  config.vm.hostname = "pyhole.local"
+  config.vm.define "pihole"
+  config.vm.hostname = "pihole.local"
   config.vm.network "public_network", auto_config: true
 
   #
@@ -11,7 +14,7 @@ Vagrant.configure("2") do |config|
   config.vm.provision "ansible" do |ansible|
     ansible.playbook = "provisioning/playbook.yml"
     ansible.groups = {
-      "pyhole" => ["pyhole"]
+      "pihole" => ["pihole"]
     }
   end
 

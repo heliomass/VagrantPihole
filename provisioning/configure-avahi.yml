@@ -1,6 +1,6 @@
 ---
 - name: Install, configure and start avahi
-  hosts: pyhole
+  hosts: pihole
   become: True
   tasks:
 
