@@ -1,0 +1,19 @@
+---
+- name: Install, configure and start avahi
+  hosts: pyhole
+  become: True
+  tasks:
+    - name: Install dbus
+      apk:
+        name: dbus
+        update_cache: yes
+
+    - name: Install avahi
+      apk:
+        name: avahi
+        update_cache: yes
+
+    - name: Install avahi-daemon
+      service:
+        name: avahi-daemon
+        state: started
