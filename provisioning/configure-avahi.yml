@@ -3,14 +3,10 @@
   hosts: pyhole
   become: True
   tasks:
-    - name: Install dbus
-      apk:
-        name: dbus
-        update_cache: yes
 
-    - name: Install avahi
-      apk:
-        name: avahi
+    - name: Install avahi-daemon
+      apt:
+        name: avahi-daemon
         update_cache: yes
 
     - name: Start avahi-daemon

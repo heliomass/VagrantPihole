@@ -1,6 +1,6 @@
 Vagrant.configure("2") do |config|
 
-  config.vm.box = "maier/alpine-3.7-x86_64"
+  config.vm.box = "ubuntu/trusty64"
   config.vm.define "pyhole"
   config.vm.hostname = "pyhole.local"
   config.vm.network "public_network", auto_config: true
