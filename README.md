@@ -120,7 +120,7 @@ These should be available via your bog-standard package manager (eg: APT on Ubun
 
         Last login: Mon May 20 16:33:32 2019 from 10.0.2.2
         vagrant@pihole:~$ ifconfig
-enp0s3: flags=4163<UP,BROADCAST,RUNNING,MULTICAST>  mtu 1500
+        enp0s3: flags=4163<UP,BROADCAST,RUNNING,MULTICAST>  mtu 1500
                 inet 10.0.2.15  netmask 255.255.255.0  broadcast 10.0.2.255
                 inet6 fe80::86:97ff:fe5e:6688  prefixlen 64  scopeid 0x20<link>
                 ether 02:86:97:5e:66:88  txqueuelen 1000  (Ethernet)
