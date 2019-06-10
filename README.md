@@ -169,3 +169,7 @@ These should be available via your bog-standard package manager (eg: APT on Ubun
 
 1. It would be nice to fully automate the install. The Pi-hole installer unofficially supports this, and Ansible can be made to prompt the user in advance for various options.
 2. It would also be nice to have an Ansible playbook for updating the OS and Pi-hole.
+
+## Background Reading
+
+Read more about this project [on my blog](https://heliomass.wordpress.com/2019/06/07/10-new-things-i-discovered-when-building-a-virtual-dns-server/).
